@@ -1,0 +1,63 @@
+/* Overall forecast row */
+.forecast-row {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to bottom right, #4A90E2, #57C5D6); /* Blue gradient background */
+    border-radius: 20px;  /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    height: 160px;  /* Adjust the height */
+    margin: 10px 0;
+  }
+  
+  /* Individual forecast card styling */
+  .forecast-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;  /* White text to match image */
+    width: 100px;  /* Set width for even distribution */
+  }
+  
+  .day {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;  /* Uppercase text like in the image */
+    margin-bottom: 10px;
+  }
+  
+  /* Weather icon adjustment */
+  .forecast-card .weather-icon {
+    margin: 10px 0;
+  }
+  
+  /* Temperature container */
+  .temp-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+  }
+  
+  /* High temperature styling */
+  .high-temp {
+    font-size: 22px;  /* Larger font for high temperature */
+    font-weight: 600;
+  }
+  
+  /* Low temperature styling */
+  .low-temp {
+    font-size: 16px;  /* Smaller font for low temperature */
+    opacity: 0.7;  /* Slightly faded */
+  }
+  
+  /* Responsive tweaks for smaller screens */
+  @media (max-width: 768px) {
+    .forecast-row {
+      flex-direction: column;  /* Stack cards vertically on smaller screens */
+      height: auto;
+    }
+  }
+  

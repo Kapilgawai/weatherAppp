@@ -66,7 +66,7 @@ class Weather extends React.Component {
           this.getWeather(position.coords.latitude, position.coords.longitude);
         })
         .catch((err) => {
-          this.getWeather(28.67, 77.22); // Default to Delhi
+          this.getWeather(28.67, 77.22); 
           alert(
             "Location access denied. Default location weather will be shown."
           );

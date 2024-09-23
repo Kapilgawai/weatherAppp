@@ -705,3 +705,111 @@ div#txt {
 .search-button:hover {
   background: rgba(255, 255, 255, 0.8); 
 }
+
+
+
+/* General row for the forecast cards */
+.forecast-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.1); 
+  border-radius: 20px;
+  padding: 14px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  height: 70px;
+  border: 1px solid rgba(255, 255, 255, 0.3); 
+}
+/* Individual forecast card styling */
+.forecast-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 5px;
+  flex: 1;
+}
+
+.day {
+  font-size: 14px; 
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.temp-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.high-temp {
+  font-size: 12px; 
+  font-weight: 600;
+}
+
+.low-temp {
+  font-size: 10px; 
+  opacity: 0.8;
+}
+
+.forecast-card .weather-icon {
+  margin-top: 3px;
+  width: 28px;
+  height: 28px;
+}
+
+
+
+/* Container for the switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 90px;
+  height: 40px;
+  backdrop-filter: blur(10px); /* Apply the blur effect */
+  border-radius: 10px; /* Rounded corners */
+  background-color: rgba(255, 255, 255, 0.368); /* Transparent background */
+  border: 2px solid rgba(255, 255, 255, 0.3); /* Border with a slight transparency */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Soft shadow for effect */
+  transition: 0.4s;
+  color:  'white';
+  padding: 2px;
+}
+
+/* Hidden checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Slider (the circle inside the switch) */
+.slider {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 22px;
+  height: 22px;
+  background-color: rgba(255, 255, 255, 0.7); /* Slightly opaque */
+  border-radius: 50%; /* Round slider */
+  transition: 0.4s;
+}
+
+/* Slider moves to the right when checked */
+input:checked + .slider {
+  transform: translateX(30px); /* Moves to the right */
+  background-color: rgba(255, 255, 255, 0.9); /* Brightens when active */
+}
+
+/* Rounded slider background */
+.switch.round {
+  border-radius: 34px;
+}
+
+.switch.round .slider {
+  border-radius: 50%;
+}
